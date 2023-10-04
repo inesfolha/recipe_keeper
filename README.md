@@ -1,19 +1,23 @@
 # Recipe Keeper 
 <p id="top"></p>
 
+## Introduction
 Recipe Keeper is a web application that allows users to manage their recipes. Users can create, read, update, and delete recipes using the provided user interface.
 
 ## Table of Contents
-
-- [Features](#features)
-- [File Structure](#file-structure)
-- [Dependencies](#dependencies)
+- [Introduction](#introduction)
+- [Description](#description)
+  - [App Features](#app-features)
+  - [File Structure](#file-structure)
+  - [Dependencies](#dependencies)
+  - [API Endpoints](#api-endpoints)
 - [Getting Started](#getting-started)
 - [How does it work?](#how-does-it-work)
-- [API Endpoints](#api-endpoints)
 - [Contributions](#contributions)
 
-## Features
+## Description 
+
+### App Features
 
 - Create new recipes with a name, ingredients, steps, and an optional image.
 - View a list of all your recipes.
@@ -22,7 +26,7 @@ Recipe Keeper is a web application that allows users to manage their recipes. Us
 - A user-friendly web interface for easy recipe management.
 
 [Back to the Top](#top)
-## File Structure
+### File Structure
 
 - `recipe_app_2.0/` - Contains the main application files.
   - `static/` - Cascading Style Sheets (CSS) for styling the web application and other static assets
@@ -37,7 +41,7 @@ Recipe Keeper is a web application that allows users to manage their recipes. Us
   - `recipes.json` - JSON file used for storing recipe data.
 
 [Back to the Top](#top)
-## API Endpoints
+### API Endpoints
 
 The API provides the following endpoints:
 
@@ -47,7 +51,7 @@ The API provides the following endpoints:
 - `PUT /recipes/{recipe_id}`: Update a specific recipe by its ID.
 - `DELETE /recipes/{recipe_id}`: Delete a specific recipe by its ID.
 
-## Dependencies
+### Dependencies
 
 - [FastAPI](https://fastapi.tiangolo.com/) - A modern, fast (high-performance) web framework for building APIs.
 - [uvicorn](https://www.uvicorn.org/) - ASGI server for running the FastAPI application.

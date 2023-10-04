@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Recipe Book </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="recipe_app_2.js"></script>
+
+</head>
+<body>
+
+<div class="title-container">
+    <h1> Recipe Keeper </h1>
+</div>
+
+<div class="Add-a-recipe-container">
+    <div class="Add-a-recipe-content">
+        <h2 id="form-title"> Add New Recipe </h2>
+
+        <form id="recipe-form">
+            <label for="recipeName"> Recipe Name:</label>
+            <input type="text" id="recipeName" name="recipeName" required><br><br>
+
+            <label for="recipeImage">Recipe Image URL:</label>
+            <input type="url" id="recipeImage" name="recipeImage" placeholder="http://example.com/my-dish.jpg">
+
+            <label for="ingredients"> Ingredients:</label>
+            <textarea type="text" id="ingredients" name="ingredients" placeholder="List ingredients separated by commas" required></textarea><br><br>
+
+            <label for="steps"> Steps for Preparation:</label>
+            <textarea id="steps" name="steps" placeholder="Steps for preparation" required></textarea><br><br>
+
+            <button id="addButton" type="submit"> Add Recipe </button>
+        
+        </form>
+    </div>  
+</div>
+
+<div class="Your-recipes-container">
+
+    <div class="recipes-content">   
+        <h2> Your recipes </h2>
+        
+        <div id="recipes-list">   
+   
+        </div>
+    </div> 
+
+</div>
+
+    
+</body>
+</html>
+

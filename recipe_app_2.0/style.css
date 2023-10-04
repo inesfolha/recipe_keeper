@@ -1,0 +1,197 @@
+
+/* Apply the color palette */
+:root {
+    --red-pantone: #e63946ff;
+    --honeydew: #f1faeeff;
+    --non-photo-blue: #a8dadcff;
+    --cerulean: #457b9dff;
+    --berkeley-blue: #1d3557ff;
+}
+
+body {
+    background-color: var(--non-photo-blue);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.title-container {
+    color: var( --berkeley-blue);
+    width: 100%;
+    padding: 1px;
+    border: none;
+    background-color: var(--berkeley-blue);}
+
+
+h1 {
+    text-align: center;
+    color: var( --non-photo-blue);
+    font-family: Arial, sans-serif;  
+    font-weight: normal;
+    font-size: 3em;
+}
+
+h2 {text-align: center;
+    color: var(--berkeley-blue);
+    font-family:  Arial, sans-serif;  
+    font-weight: normal;}
+
+/* Style for the "Add a Recipe" box */
+.Add-a-recipe-container {
+    padding: 20px;
+    border: 2px solid var(--honeydew);
+    border-radius: 5px;
+    background-color: var(--honeydew);
+    margin: 30px;
+    display: flex;
+    float: left;
+    width: 23%;
+}
+
+
+.Add-a-recipe-content {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Horizontally center the items */
+    justify-content: center;
+    width: 100%;
+    margin: none;
+    padding: none;
+}
+
+/* Style the form fields */
+form label, form input, form textarea {
+    margin-bottom: 10px;
+    color: var(--berkeley-blue);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--non-photo-blue);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Style the "Add Recipe" button */
+form button[type="submit"] {
+    background-color: var(--red-pantone);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+form button[type="submit"]:hover {
+    background-color: var(--cerulean);
+}
+
+/* Style for the recipe display area */
+.Your-recipes-container {
+    padding: 20px;
+    background-color: var(--honeydew);
+    border-radius: 5px;
+    border: 2px solid var(--honeydew);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    display: flex;
+    float: right;
+    width: 65%;
+}
+
+.recipes-content {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Horizontally center the items */
+    justify-content: center;
+}
+
+#recipes-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Minimum width of 300px */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.recipe-item {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid var(--non-photo-blue);
+    padding: 10px;
+    overflow: hidden;
+
+    display: flex; /* Add flex display */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; 
+    
+}
+
+.recipe-item h3 {
+    margin-top: 0;
+}
+
+.recipe-item p {
+    margin-bottom: 0;
+    max-height: 100px; /* Set maximum height for the content */
+    overflow-y: auto; /* Add vertical scroll if content exceeds max height */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: right; /* Adjust as needed */
+    align-items: center; /* Adjust as needed */
+    
+}
+
+.delete-button,
+.edit-button {
+    background-color: var(--red-pantone);
+    color: white;
+    border: none;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%; 
+    margin-top: 5px; 
+    margin-left: 5px;
+}
+
+.edit-button {
+    background-color: var(--cerulean); 
+}
+
+.edit-button:hover{
+    background-color:var(--red-pantone);
+}
+
+.delete-button:hover {
+    background-color: var(--cerulean);
+}
+
+form input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--non-photo-blue);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.recipe-image {
+    max-width: 100%; 
+    max-height: 150px; 
+    margin-top: 15px; 
+}
+

@@ -14,7 +14,6 @@ Recipe Keeper is a web application that allows users to manage their recipes. Us
 - [Contributions](#contributions)
 - [License](#license)
 
-[Back to the Top](#top)
 ## Features
 
 - Create new recipes with a name, ingredients, steps, and an optional image.
@@ -23,6 +22,7 @@ Recipe Keeper is a web application that allows users to manage their recipes. Us
 - Delete recipes you no longer need.
 - A user-friendly web interface for easy recipe management.
 
+[Back to the Top](#top)
 ## File Structure
 
 - `recipe_app_2.0/` - Contains the main application files.

@@ -12,7 +12,6 @@ Recipe Keeper is a web application that allows users to manage their recipes. Us
 - [How does it work?](#how-does-it-work)
 - [API Endpoints](#api-endpoints)
 - [Contributions](#contributions)
-- [License](#license)
 
 ## Features
 
@@ -82,7 +81,7 @@ http://localhost:8000/recipe_2.html
 [Back to the Top](#top)
 
 ## How does it work?
-- [Watch Demo](link)
+- [Watch Demo](https://www.youtube.com/watch?v=lNLidetiIVA)
 
 
 ## Contributions
